@@ -1,4 +1,5 @@
 /target
 /x86_64
 /.cargo
+/output
 freetype.dll

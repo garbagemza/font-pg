@@ -4,6 +4,19 @@ version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
+name = "bmp"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "byteorder 1.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "byteorder"
+version = "1.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
 name = "cc"
 version = "1.0.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -12,6 +25,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 name = "font-pg"
 version = "0.1.0"
 dependencies = [
+ "bmp 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "freetype-rs 0.18.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "unicode-normalization 0.1.7 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -69,6 +83,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [metadata]
 "checksum bitflags 1.0.3 (registry+https://github.com/rust-lang/crates.io-index)" = "d0c54bb8f454c567f21197eefcdbf5679d0bd99f2ddbe52e84c77061952e6789"
+"checksum bmp 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "ef8ceb6f83a7c5dde38e524a66b76a92cc02abb63880a2d9d067cdf8b50a76da"
+"checksum byteorder 1.2.3 (registry+https://github.com/rust-lang/crates.io-index)" = "74c0b906e9446b0a2e4f760cdb3fa4b2c48cdc6db8766a845c54b6ff063fd2e9"
 "checksum cc 1.0.17 (registry+https://github.com/rust-lang/crates.io-index)" = "49ec142f5768efb5b7622aebc3fdbdbb8950a4b9ba996393cb76ef7466e8747d"
 "checksum freetype-rs 0.18.0 (registry+https://github.com/rust-lang/crates.io-index)" = "4e39209f56d752b6ccab6a1b3bd365e057476903e48e6384eb8ea0fd0c911d42"
 "checksum freetype-sys 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "4f858c54592103d59f7008c2dd438f7aab72fb587def60453c74f708531b832b"
