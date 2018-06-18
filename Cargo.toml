@@ -1,0 +1,7 @@
+[package]
+name = "font-pg"
+version = "0.1.0"
+authors = ["Mauro Arancibia <mauro.arancibia@outlook.com>"]
+
+[dependencies]
+freetype-rs = "0.18"
