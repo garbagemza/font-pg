@@ -1,3 +1,4 @@
 /target
 /x86_64
+/.cargo
 freetype.dll
