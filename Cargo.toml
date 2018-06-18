@@ -4,4 +4,5 @@ version = "0.1.0"
 authors = ["Mauro Arancibia <mauro.arancibia@outlook.com>"]
 
 [dependencies]
+unicode-normalization = "0.1.0"
 freetype-rs = "0.18"
