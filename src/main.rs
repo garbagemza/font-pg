@@ -58,10 +58,10 @@ fn main() {
     let y = glyph.bitmap_top();
     let figure = draw_bitmap(glyph.bitmap(), x, y);
 
-    for i in 0 .. HEIGHT {
-        for j in 0 .. WIDTH {
-            let value: u8 = figure[i][j];
-            img.set_pixel(j as u32, i as u32, Pixel::new(value, value, value));
+    for j in 0 .. HEIGHT {
+        for i in 0 .. WIDTH {
+            let value: u8 = figure[j][i];
+            img.set_pixel(i as u32, j as u32, Pixel::new(value, value, value));
         }
     }
     let _ = img.save("./output/img.bmp");
