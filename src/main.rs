@@ -9,15 +9,11 @@ use bmp::Pixel;
 const WIDTH: usize = 32;
 const HEIGHT: usize = 48;
 
-fn draw_bitmap(bitmap: ft::Bitmap, mut x: i32, y: i32) -> [[u8; WIDTH]; HEIGHT] {
+fn draw_bitmap(bitmap: ft::Bitmap, x: i32, y: i32) -> [[u8; WIDTH]; HEIGHT] {
     let mut figure = [[0; WIDTH]; HEIGHT];
     let mut p = 0;
     let mut q = 0;
-    if x < 0 {
-        x = 0;
-    } 
 
-    println!("x: {} y: {} width: {} rows: {}", x, y, bitmap.width(), bitmap.rows());
     let x_max = x + bitmap.width();
     let y_max = y + bitmap.rows();
 
